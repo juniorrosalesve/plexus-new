@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plexus Business Solutions</title>
     <link rel="stylesheet" href="./resources/css/styles.css">
-    <link rel="stylesheet" href="./resources/css/extra.css">
+    <link rel="stylesheet" href="./resources/css/extra__2.css">
     <link rel="stylesheet" href="./resources/css/swiper.min.css">
 
     <link rel="shortcut icon" href="./resources/favicons/favico1.png" type="image/x-icon" />
