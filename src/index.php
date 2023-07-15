@@ -91,7 +91,7 @@
         var cases = new Swiper(".cases", {
             loop:true,
             autoplay: {
-                delay:3000
+                delay:2500
             }
         });
     </script>
