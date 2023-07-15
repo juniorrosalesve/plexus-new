@@ -8,26 +8,16 @@
     <link rel="stylesheet" href="./resources/css/extra.css">
     <link rel="stylesheet" href="./resources/css/swiper.min.css">
 
-    <style>
-        .swiper {
-            width: 100%;
-        }
+    <link rel="shortcut icon" href="./resources/favicons/favico1.png" type="image/x-icon" />
+    <!-- For iPhone -->
+    <link rel="apple-touch-icon-precomposed" href="./resources/favicons/iphone-favico.png">
+    <!-- For iPhone 4 Retina display -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./resources/favicons/iphone2-favico.png">
+    <!-- For iPad -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./resources/favicons/ipad-favico.png">
+    <!-- For iPad Retina display -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./resources/favicons/ipad2-favico.png">
 
-        .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .swiper-slide img {
-            display: block;
-            width: 100%;
-            object-fit: cover;
-        }
-    </style>
 </head>
 <body class="bg-plexus">
     <div class="w-[1160px] mx-auto">
