@@ -89,16 +89,21 @@
     <script src="./resources/js/swiper-bundle.min.js"></script>
     <script>
         var sliders = new Swiper(".sliders", {
-            // loop:true,
-            // autoplay: {
-            //     delay:3000
-            // },
+            loop:true,
+            autoplay: {
+                delay:3000
+            },
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
         });
-        var cases = new Swiper(".cases", {});
+        var cases = new Swiper(".cases", {
+            loop:true,
+            autoplay: {
+                delay:3000
+            }
+        });
     </script>
 </body>
 </html>
