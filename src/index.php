@@ -1,23 +1,11 @@
+<?php $page     =   "home"; ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plexus Business Solutions</title>
-    <link rel="stylesheet" href="./resources/css/styles.css">
-    <link rel="stylesheet" href="./resources/css/extra__2.css">
-    <link rel="stylesheet" href="./resources/css/swiper.min.css">
-
-    <link rel="shortcut icon" href="./resources/favicons/favico1.png" type="image/x-icon" />
-    <!-- For iPhone -->
-    <link rel="apple-touch-icon-precomposed" href="./resources/favicons/iphone-favico.png">
-    <!-- For iPhone 4 Retina display -->
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./resources/favicons/iphone2-favico.png">
-    <!-- For iPad -->
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./resources/favicons/ipad-favico.png">
-    <!-- For iPad Retina display -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./resources/favicons/ipad2-favico.png">
-
+    <?php include_once("./theme/styles.php"); ?>
 </head>
 <body class="bg-plexus">
     <div class="w-[1160px] mx-auto">
@@ -30,7 +18,7 @@
                 <?php 
                     for($i = 1; $i <= 6; $i++) {
                         $slider     =   '<div class="swiper-slide">';
-                        $slider     .=  '<img src="./resources/sliders/0'.$i.'.jpg" alt="slider-0'.$i.'"></div>';
+                        $slider     .=  '<img src="./res/sliders/'.$_SESSION['lang'].'/'.$i.'.jpg" alt="slider-'.$i.'"></div>';
                         echo $slider;
                     }
                 ?>
@@ -38,36 +26,38 @@
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </div>
-        <img src="./resources/asegure_negocio.png" alt="asegure-su-negocio">
+        <img src="./res/asegure_negocio.png" alt="asegure-su-negocio">
         <div class="grid grid-cols-4 bg-white">
             <?php
                 for($i = 1; $i <= 4; $i++)
-                    echo '<div class="p-1"><img src="./resources/sections/'.$i.'.jpg" alt="sections'.$i.'" class="rounded" style="border:4px solid #0f284c;"></div>';
+                    echo '<div class="p-1"><img src="./res/home/'.$_SESSION['lang'].'/'.$i.'.jpg" alt="sections'.$i.'" class="rounded cursor-pointer" style="border:4px solid #0f284c;"></div>';
             ?>
         </div>
 
         <!-- BODY -->
         <div class="bg-white">
-            <p class="p-5 text-lg">Son ya muchos los casos de éxito que avalan nuestra experiencia y resultados.</p>
+            <p class="p-5 text-lg"><?php echo $lang["casos"]; ?></p>
         
             <div class="swiper cases">
                 <div class="swiper-wrapper">
                     <?php 
                         for($i = 1; $i <= 5; $i++) 
-                            echo '<div class="swiper-slide"><img src="./resources/cases/'.$i.'.jpg" alt="case-'.$i.'" /></div>';
+                            echo '<div class="swiper-slide"><img src="./res/cases/'.$i.'.jpg" alt="case-'.$i.'" /></div>';
                     ?>
                 </div>
             </div>
             <div class="flex justify-around p-10">
                 <div>
-                    <img src="./resources/20_years.png" alt="20-years" class="w-full" />
+                    <img src="./res/home/<?php echo $_SESSION['lang']; ?>/20_years.jpg" alt="20-years" class="w-full" />
                 </div>
                 <div class="w-[60%] p-10">
-                    <p style="font-size:20px;color:#4d4d4d;" class="italic">Contamos con <span class="font-bold">más de 20 años de experiencia.</span> Son muchos los casos de éxito que acumulamos en nuestro haber, generando clientes altamente exitosos y satisfechos. Nuestros resultados y retornos exceden las expectativas de nuestros clientes.</p>
+                    <p style="font-size:20px;" class="italic text-pl-gray">
+                        <?php echo $lang["years"]; ?>
+                    </p>
                 </div>
             </div>
             <div class="mt-1">
-                <img src="./resources/offices.jpg" alt="offices">
+                <img src="./res/home/<?php echo $_SESSION['lang']; ?>/offices.jpg" alt="offices">
             </div>
         </div>
 
@@ -76,7 +66,7 @@
     </div>
 
     <!-- Scripts -->
-    <script src="./resources/js/swiper-bundle.min.js"></script>
+    <?php include_once("./theme/scripts.php"); ?>
     <script>
         var sliders = new Swiper(".sliders", {
             loop:true,
