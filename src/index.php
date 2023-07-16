@@ -8,7 +8,7 @@
     <?php include_once("./theme/styles.php"); ?>
 </head>
 <body class="bg-plexus">
-    <div class="w-[1160px] mx-auto">
+    <div class="w-[1160px]  mx-auto">
         <!-- HEADER -->
         <?php include_once("./theme/header.php"); ?>
 
@@ -26,7 +26,7 @@
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </div>
-        <img src="./res/asegure_negocio.png" alt="asegure-su-negocio">
+        <img src="./res/home/<?php echo $_SESSION['lang']; ?>/asegure_negocio.png" alt="asegure-su-negocio">
         <div class="grid grid-cols-4 bg-white">
             <?php
                 for($i = 1; $i <= 4; $i++)
