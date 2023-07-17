@@ -22,16 +22,16 @@
                 <p><?php echo $lang['knowus-text-2']; ?></p>
                 <ul class="list-disc ml-10 mt-3 font-bold">
                     <li>
-                        <a href="#"><?php echo $lang["knowus-list-1"][0]; ?></a>
+                        <a href="<?php echo $cog['link_operational_excellence']; ?>"><?php echo $lang["knowus-list-1"][0]; ?></a>
                     </li>
                     <li>
-                        <a href="#"><?php echo $lang["knowus-list-1"][1]; ?></a>
+                        <a href="<?php echo $cog['link_strategic']; ?>"><?php echo $lang["knowus-list-1"][1]; ?></a>
                     </li>
                     <li>
-                        <a href="#"><?php echo $lang["knowus-list-1"][2]; ?></a>
+                        <a href="<?php echo $cog['link_gov']; ?>"><?php echo $lang["knowus-list-1"][2]; ?></a>
                     </li>
                     <li>
-                        <a href="#"><?php echo $lang["knowus-list-1"][3]; ?></a>
+                        <a href="<?php echo $cog['link_human_capital']; ?>"><?php echo $lang["knowus-list-1"][3]; ?></a>
                     </li>
                 </ul>
             </div>
