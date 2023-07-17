@@ -16,25 +16,25 @@
         <div class="swiper sliders">
             <div class="swiper-wrapper" style="max-height:450px;">
                 <div class="swiper-slide">
-                    <div class="absolute" style="top:50%;left:50%;transform: translate(-50%, -50%);">
-                        <img src="./res/logo-plexus.png" alt="logo">
+                    <div class="absolute" style="top:50%;left:50%;transform: translate(-50%, -50%);" data-aos="zoom-in" data-aos-duration="3000">
+                        <img src="./res/logo-plexus.png" alt="logo" />
                     </div>
-                    <div class="absolute" style="top:70%;left:55%;transform: translate(-50%, -50%);">
+                    <div class="absolute" style="top:70%;left:55%;transform: translate(-50%, -50%);" data-aos="fade-right" data-aos-duration="3000">
                         <p class="text-2xl uppercase italic font-bold text text-blue-dark">
                             <?php echo $lang['slider-text-1']; ?>
                         </p>
                     </div>
-                    <div class="absolute" style="top:78%;left:70%;transform: translate(-50%, -50%);">
+                    <div class="absolute" style="top:78%;left:70%;transform: translate(-50%, -50%);" data-aos="fade-right" data-aos-duration="3000">
                         <p class="text-2xl uppercase italic font-semibold text text-blue-dark">
                             <?php echo $lang['slider-text-2']; ?>
                         </p>
                     </div>
-                    <img src="./res/sliders/<?php echo $_SESSION['lang']; ?>/1.jpg" alt="slider-1" />
+                    <img src="./res/home/sliders/<?php echo $_SESSION['lang']; ?>/1.jpg" alt="slider-1" />
                 </div>
                 <?php 
                     for($i = 2; $i <= 6; $i++) {
                         $slider     =   '<div class="swiper-slide">';
-                        $slider     .=  '<img src="./res/sliders/'.$_SESSION['lang'].'/'.$i.'.jpg" alt="slider-'.$i.'" /></div>';
+                        $slider     .=  '<img src="./res/home/sliders/'.$_SESSION['lang'].'/'.$i.'.jpg" alt="slider-'.$i.'" /></div>';
                         echo $slider;
                     }
                 ?>
@@ -44,10 +44,26 @@
         </div>
         <img src="./res/home/<?php echo $_SESSION['lang']; ?>/asegure_negocio.png" alt="asegure-su-negocio">
         <div class="grid grid-cols-4 bg-white">
-            <?php
-                for($i = 1; $i <= 4; $i++)
-                    echo '<div class="p-1"><img src="./res/home/'.$_SESSION['lang'].'/'.$i.'.jpg" alt="sections'.$i.'" class="rounded cursor-pointer" style="border:4px solid #0f284c;"></div>';
-            ?>
+            <div class="p-1">
+                <a href="#">
+                    <img src="./res/home/<?php echo $_SESSION['lang']; ?>/1.jpg" alt="sections1" class="rounded cursor-pointer" style="border:4px solid #0f284c;">
+                </a>
+            </div>
+            <div class="p-1">
+                <a href="#">
+                    <img src="./res/home/<?php echo $_SESSION['lang']; ?>/2.jpg" alt="sections2" class="rounded cursor-pointer" style="border:4px solid #0f284c;">
+                </a>
+            </div>
+            <div class="p-1">
+                <a href="<?php echo $cog['link_gov']; ?>">
+                    <img src="./res/home/<?php echo $_SESSION['lang']; ?>/3.jpg" alt="sections3" class="rounded cursor-pointer" style="border:4px solid #0f284c;">
+                </a>
+            </div>
+            <div class="p-1">
+                <a href="<?php echo $cog['link_human_capital']; ?>">
+                    <img src="./res/home/<?php echo $_SESSION['lang']; ?>/4.jpg" alt="sections4" class="rounded cursor-pointer" style="border:4px solid #0f284c;">
+                </a>
+            </div>
         </div>
 
         <!-- BODY -->

@@ -22,4 +22,13 @@
         include_once("./language/".$_SESSION['lang']."/contact.php");
     if($page == 'testimonials')
         include_once("./language/".$_SESSION['lang']."/testimonial.php");
+
+    if($page == 'cor-gov')
+        include_once("./language/".$_SESSION['lang']."/corporate-governance.php");
+    if($page == 'human-capital')
+        include_once("./language/".$_SESSION['lang']."/human-capital.php");
+
     include_once("./language/".$_SESSION['lang']."/header.php");
+
+    $cog['link_gov']   =   './corporate-governance.php';
+    $cog['link_human_capital'] = './human-capital.php';

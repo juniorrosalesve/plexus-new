@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="./res/css/styles.css">
-<link rel="stylesheet" href="./res/css/extra__4.css">
+<link rel="stylesheet" href="./res/css/extra__5.css">
 <link rel="stylesheet" href="./res/css/swiper.min.css">
+<link rel="stylesheet" href="./res/css/aos.css">
 
 <link rel="shortcut icon" href="./res/favicons/favico1.png" type="image/x-icon" />
 <!-- For iPhone -->
