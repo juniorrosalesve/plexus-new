@@ -21,16 +21,22 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
                 <div>
                     <a href="<?php echo $cog['link_operational_excellence']; ?>">
-                        <img src="./res/solutions/<?php echo $_SESSION['lang']; ?>/'1.jpg" alt="image-1" style="border:2px solid #0f284c;" class="cursor-pointer" />
+                        <img src="./res/solutions/<?php echo $_SESSION['lang']; ?>/1.jpg" alt="image-1" style="border:2px solid #0f284c;" class="cursor-pointer" />
                     </a>
+                </div>
+                <div>
                     <a href="<?php echo $cog['link_strategic']; ?>">
-                        <img src="./res/solutions/<?php echo $_SESSION['lang']; ?>/'2.jpg" alt="image-2" style="border:2px solid #0f284c;" class="cursor-pointer" />
+                        <img src="./res/solutions/<?php echo $_SESSION['lang']; ?>/2.jpg" alt="image-1" style="border:2px solid #0f284c;" class="cursor-pointer" />
                     </a>
+                </div>
+                <div>
                     <a href="<?php echo $cog['link_gov']; ?>">
-                        <img src="./res/solutions/<?php echo $_SESSION['lang']; ?>/'3.jpg" alt="image-3" style="border:2px solid #0f284c;" class="cursor-pointer" />
+                        <img src="./res/solutions/<?php echo $_SESSION['lang']; ?>/3.jpg" alt="image-1" style="border:2px solid #0f284c;" class="cursor-pointer" />
                     </a>
+                </div>
+                <div>
                     <a href="<?php echo $cog['link_human_capital']; ?>">
-                        <img src="./res/solutions/<?php echo $_SESSION['lang']; ?>/'4.jpg" alt="image-4" style="border:2px solid #0f284c;" class="cursor-pointer" />
+                        <img src="./res/solutions/<?php echo $_SESSION['lang']; ?>/4.jpg" alt="image-1" style="border:2px solid #0f284c;" class="cursor-pointer" />
                     </a>
                 </div>
             </div>
