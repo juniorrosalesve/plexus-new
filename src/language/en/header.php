@@ -1,5 +1,5 @@
 <?php
-    // Lenguaje en español
+    // Lenguaje en Inglés
     $lang["menu"]     = [
         "Home",
         "Get to know us",

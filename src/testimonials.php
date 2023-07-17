@@ -13,7 +13,13 @@
         <?php include_once("./theme/header.php"); ?>
 
         <!-- BODY -->
-        <div class="h-56 bg-white">
+        <div>
+            <img src="./res/testimonials/<?php echo $_SESSION['lang']; ?>/testimonial.jpg" alt="testimonial" />
+        </div>
+        <div class="bg-gray-300 p-8 text-pl-gray">
+            <p class="text-lg"><?php echo $lang['testimonial']; ?></p>
+        </div>
+        <div class="bg-white h-screen">
 
         </div>
 

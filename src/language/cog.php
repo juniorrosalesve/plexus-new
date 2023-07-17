@@ -16,4 +16,10 @@
         include_once("./language/".$_SESSION['lang']."/business-solutions.php");
     if($page == 'i-experience')
         include_once("./language/".$_SESSION['lang']."/industry-experience.php");
+    if($page == 'services')
+        include_once("./language/".$_SESSION['lang']."/our-services.php");
+    if($page == 'contact')
+        include_once("./language/".$_SESSION['lang']."/contact.php");
+    if($page == 'testimonials')
+        include_once("./language/".$_SESSION['lang']."/testimonial.php");
     include_once("./language/".$_SESSION['lang']."/header.php");

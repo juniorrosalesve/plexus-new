@@ -1,12 +1,11 @@
 <?php
     include_once("./language/cog.php"); //cargar config para los lenguajes...
     $route  =   basename($_SERVER["SCRIPT_FILENAME"], '.php');
-    // die($route);
 ?>
 <div style="background-color: #d9d9d9;" class="h-6">
     <div class="flex float-right text-xs mt-[3px]">
         <div>
-            <a href="#"><?php echo $lang["joinTeam"]; ?></a>
+            <a href="javascript:void(0);"><?php echo $lang["joinTeam"]; ?></a>
         </div>
         <div class="ml-3 mr-3">|</div>
         <div>
@@ -23,7 +22,7 @@
 <header class="bg-white p-5 w-full head-border">
     <nav class="flex w-full mb-5">
         <div class="flex-none">
-            <img src="./res/logo-plexus.png" alt="logo" class="w-[230px] cursor-pointer">
+            <a href="./"><img src="./res/logo-plexus.png" alt="logo" class="w-[230px] cursor-pointer" /></a>
         </div>
         <div class="grow ml-7 mt-3">
             <ul class="inline-block navbar">

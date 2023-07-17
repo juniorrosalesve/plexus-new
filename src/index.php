@@ -15,10 +15,26 @@
         <!-- SLIDER -->
         <div class="swiper sliders">
             <div class="swiper-wrapper" style="max-height:450px;">
+                <div class="swiper-slide">
+                    <div class="absolute" style="top:50%;left:50%;transform: translate(-50%, -50%);">
+                        <img src="./res/logo-plexus.png" alt="logo">
+                    </div>
+                    <div class="absolute" style="top:70%;left:55%;transform: translate(-50%, -50%);">
+                        <p class="text-2xl uppercase italic font-bold text text-blue-dark">
+                            <?php echo $lang['slider-text-1']; ?>
+                        </p>
+                    </div>
+                    <div class="absolute" style="top:78%;left:70%;transform: translate(-50%, -50%);">
+                        <p class="text-2xl uppercase italic font-semibold text text-blue-dark">
+                            <?php echo $lang['slider-text-2']; ?>
+                        </p>
+                    </div>
+                    <img src="./res/sliders/<?php echo $_SESSION['lang']; ?>/1.jpg" alt="slider-1" />
+                </div>
                 <?php 
-                    for($i = 1; $i <= 6; $i++) {
+                    for($i = 2; $i <= 6; $i++) {
                         $slider     =   '<div class="swiper-slide">';
-                        $slider     .=  '<img src="./res/sliders/'.$_SESSION['lang'].'/'.$i.'.jpg" alt="slider-'.$i.'"></div>';
+                        $slider     .=  '<img src="./res/sliders/'.$_SESSION['lang'].'/'.$i.'.jpg" alt="slider-'.$i.'" /></div>';
                         echo $slider;
                     }
                 ?>
