@@ -8,7 +8,7 @@
     <?php include_once("./theme/styles.php"); ?>
 </head>
 <body class="bg-plexus">
-    <div class="w-[1160px] mx-auto">
+    <div class="w-[400px] md:w-[800px] lg:w-[1160px]  mx-auto">
         <!-- HEADER -->
         <?php include_once("./theme/header.php"); ?>
 
@@ -18,7 +18,7 @@
         </div>
         <div class="p-10 bg-white text-pl-gray">
             <p><?php echo $lang['info']; ?></p>
-            <div class="grid grid-cols-3 mt-5 gap-5">
+            <div class="grid grid-cols-1 md:grid-cols-3 mt-5 gap-5">
                 <div>
                     <h1 class="text-lg"><?php echo $lang['manufacture']; ?></h1>
                     <div class="swiper swiper-manufacture">

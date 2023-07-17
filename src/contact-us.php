@@ -8,7 +8,7 @@
     <?php include_once("./theme/styles.php"); ?>
 </head>
 <body class="bg-plexus">
-    <div class="w-[1160px] mx-auto">
+    <div class="w-[400px] md:w-[800px] lg:w-[1160px]  mx-auto">
         <!-- HEADER -->
         <?php include_once("./theme/header.php"); ?>
 
@@ -20,7 +20,7 @@
         </div>
         <div class="bg-white p-8 text-pl-gray">
             <p class="mb-5"><?php echo $lang['info']; ?></p>
-            <div class="grid grid-cols-2 gap-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
                 <div>
                     <h1 class="text-lg mb-3"><?php echo $lang['florida']; ?></h1>
                     <div class="bg-gray-200 h-52"></div>

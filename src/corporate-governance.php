@@ -8,7 +8,7 @@
     <?php include_once("./theme/styles.php"); ?>
 </head>
 <body class="bg-plexus">
-    <div class="w-[1160px] mx-auto">
+    <div class="w-[400px] md:w-[800px] lg:w-[1160px]  mx-auto">
         <!-- HEADER -->
         <?php include_once("./theme/header.php"); ?>
 
@@ -16,18 +16,18 @@
         <div class="relative">
             <img src="./res/sections/<?php echo $_SESSION['lang']; ?>/gob.jpg" alt="gob" class="w-full" />
             <div class="absolute right-0 top-0">
-                <a href="#">
-                    <img src="./res/sections/<?php echo $_SESSION['lang']; ?>/1.png" alt="1" width="233" height="119" />
+                <a href="<?php echo $cog['link_operational_excellence']; ?>">
+                    <img src="./res/sections/<?php echo $_SESSION['lang']; ?>/1.png" alt="1" class="w-[100ppx] h-[40px] md:w-[233px] md:h-[119px]" />
                 </a>
-                <a href="#">
-                    <img src="./res/sections/<?php echo $_SESSION['lang']; ?>/2.png" alt="2" width="233" height="119" />
+                <a href="<?php echo $cog['link_strategic']; ?>">
+                    <img src="./res/sections/<?php echo $_SESSION['lang']; ?>/2.png" alt="2" class="w-[100ppx] h-[40px] md:w-[233px] md:h-[119px]" />
                 </a>
-                <a href="#">
-                    <img src="./res/sections/<?php echo $_SESSION['lang']; ?>/4.png" alt="4" width="233" height="119" />
+                <a href="<?php echo $cog['link_human_capital']; ?>">
+                    <img src="./res/sections/<?php echo $_SESSION['lang']; ?>/4.png" alt="4" class="w-[100ppx] h-[40px] md:w-[233px] md:h-[119px]" />
                 </a>
             </div>
         </div>
-        <div class="grid grid-cols-2 gap-5 text-pl-gray bg-white p-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 text-pl-gray bg-white p-10">
             <div>
                 <p><?php echo $lang['info-1']; ?></p>
             </div>
@@ -38,7 +38,7 @@
         <div class="bg-white">
             <hr class="mx-10" />
         </div>
-        <div class="grid grid-cols-2 gap-5 text-pl-gray bg-white p-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 text-pl-gray bg-white p-10">
             <div>
                 <ul class="list-none">
                     <?php

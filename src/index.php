@@ -8,7 +8,7 @@
     <?php include_once("./theme/styles.php"); ?>
 </head>
 <body class="bg-plexus">
-    <div class="w-[1160px]  mx-auto">
+    <div class="w-[400px] md:w-[800px] lg:w-[1160px]  mx-auto">
         <!-- HEADER -->
         <?php include_once("./theme/header.php"); ?>
 
@@ -45,12 +45,12 @@
         <img src="./res/home/<?php echo $_SESSION['lang']; ?>/asegure_negocio.png" alt="asegure-su-negocio">
         <div class="grid grid-cols-4 bg-white">
             <div class="p-1">
-                <a href="#">
+                <a href="<?php echo $cog['link_operational_excellence']; ?>">
                     <img src="./res/home/<?php echo $_SESSION['lang']; ?>/1.jpg" alt="sections1" class="rounded cursor-pointer" style="border:4px solid #0f284c;">
                 </a>
             </div>
             <div class="p-1">
-                <a href="#">
+                <a href="<?php echo $cog['link_strategic']; ?>">
                     <img src="./res/home/<?php echo $_SESSION['lang']; ?>/2.jpg" alt="sections2" class="rounded cursor-pointer" style="border:4px solid #0f284c;">
                 </a>
             </div>
@@ -78,11 +78,11 @@
                     ?>
                 </div>
             </div>
-            <div class="flex justify-around p-10">
+            <div class="md:flex justify-around p-10">
                 <div>
                     <img src="./res/home/<?php echo $_SESSION['lang']; ?>/20_years.jpg" alt="20-years" class="w-full" />
                 </div>
-                <div class="w-[60%] p-10">
+                <div class="md:w-[60%] p-10">
                     <p style="font-size:20px;" class="italic text-pl-gray">
                         <?php echo $lang["years"]; ?>
                     </p>

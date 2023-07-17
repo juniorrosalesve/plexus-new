@@ -8,7 +8,7 @@
     <?php include_once("./theme/styles.php"); ?>
 </head>
 <body class="bg-plexus">
-    <div class="w-[1160px] mx-auto">
+    <div class="w-[400px] md:w-[800px] lg:w-[1160px]  mx-auto">
         <!-- HEADER -->
         <?php include_once("./theme/header.php"); ?>
 
@@ -19,7 +19,7 @@
         <div class="p-8 bg-white text-pl-gray">
             <p><?php echo $lang['info']; ?></p>
             <h1 class="text-3xl mt-5 mb-10"><?php echo $lang['fun-title']; ?></h1>
-            <div class="grid grid-cols-2 gap-5">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <div>
                     <p class="mb-10"><?php echo $lang['fun-text-1']; ?></p>
                     <img src="./res/services/cash.jpg" alt="cash">
@@ -146,7 +146,7 @@
             </div>
 
             <h1 class="text-3xl mt-5 mb-10"><?php echo $lang['strat-title']; ?></h1>
-            <div class="grid grid-cols-2 gap-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
                 <div>
                     <img src="./res/services/enfoque.jpg" alt="enfoque" />
                 </div>

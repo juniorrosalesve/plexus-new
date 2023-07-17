@@ -23,6 +23,10 @@
     if($page == 'testimonials')
         include_once("./language/".$_SESSION['lang']."/testimonial.php");
 
+    if($page == 'operational-exc')
+        include_once("./language/".$_SESSION['lang']."/operational-excellence.php");
+    if($page == 'strategic')
+        include_once("./language/".$_SESSION['lang']."/strategic-management-and-deployment.php");
     if($page == 'cor-gov')
         include_once("./language/".$_SESSION['lang']."/corporate-governance.php");
     if($page == 'human-capital')
@@ -30,5 +34,7 @@
 
     include_once("./language/".$_SESSION['lang']."/header.php");
 
+    $cog['link_operational_excellence']     =   './operational-excellence.php';
+    $cog['link_strategic']  =   './strategic-management-and-deployment.php';
     $cog['link_gov']   =   './corporate-governance.php';
     $cog['link_human_capital'] = './human-capital.php';

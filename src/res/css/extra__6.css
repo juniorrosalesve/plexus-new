@@ -67,6 +67,15 @@ nav {
     /* font-style:italic; */
     font-size: 15px;
 }
+.navbar-phone li {
+    margin-right: 3px;
+    color:var(--blue-dark);
+    cursor:pointer;
+    font-weight: 700;
+    /* font-style:italic; */
+    margin-bottom: 1px solid gray;
+    font-size: 13px;
+}
 .home:hover {
     /* background-color: var(--blue-dark); */
     transform: skew(-14deg);
@@ -143,6 +152,20 @@ footer {
     border-bottom: 1px solid #dcdcdc;
     border-radius: 0px;
     margin-top: -20px;
+}
+.operation-border {
+    border-left: 1px solid #dcdcdc;
+    border-right: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    border-radius: 0px;
+    margin-top: -5px;
+}
+.strategic-border {
+    border-left: 1px solid #dcdcdc;
+    border-right: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    border-radius: 0px;
+    margin-top: -5px;
 }
 .table-services tr td {
     border-bottom: 1px solid #dcdcdc;

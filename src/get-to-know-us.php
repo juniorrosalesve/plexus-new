@@ -8,7 +8,7 @@
     <?php include_once("./theme/styles.php"); ?>
 </head>
 <body class="bg-plexus">
-    <div class="w-[1160px] mx-auto">
+    <div class="w-[400px] md:w-[800px] lg:w-[1160px]  mx-auto">
         <!-- HEADER -->
         <?php include_once("./theme/header.php"); ?>
 
@@ -16,7 +16,7 @@
         <div>
             <img src="./res/us/<?php echo $_SESSION['lang']; ?>/get-to-know-us.jpg" alt="get-to-know-us" />
         </div>
-        <div class="grid grid-cols-2 bg-white p-5 text-sm gap-4 text-pl-gray">
+        <div class="grid grid-cols-1 md:grid-cols-2 bg-white p-5 text-sm gap-4 text-pl-gray">
             <div>
                 <p class="mb-3"><?php echo $lang['knowus-text-1']; ?></p>
                 <p><?php echo $lang['knowus-text-2']; ?></p>
@@ -147,7 +147,7 @@
         <div class="flex bg-white">
             <div class="grow">
                 <h1 class="text-lg ml-5 mt-5 text-pl-gray"><?php echo $lang['directive-title']; ?></h1>
-                <div class="grid grid-cols-2 p-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 p-10">
                     <div class="mb-4">
                         <img src="./res/directive/director_cmedez.jpg" alt="director_cmedez" />
                         <h4 class="ml-3 font-semibold italic">Carlos Méndez</h4>
