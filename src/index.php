@@ -19,13 +19,13 @@
                     <div class="absolute" style="top:50%;left:50%;transform: translate(-50%, -50%);" data-aos="zoom-in" data-aos-duration="3000">
                         <img src="./res/logo-plexus.png" alt="logo" />
                     </div>
-                    <div class="absolute" style="top:70%;left:55%;transform: translate(-50%, -50%);" data-aos="fade-right" data-aos-duration="3000">
-                        <p class="text-2xl uppercase italic font-bold text text-blue-dark">
+                    <div class="absolute top-[72%] left-[55%] md:top-[70%]" style="transform: translate(-50%, -50%);" data-aos="fade-right" data-aos-duration="3000">
+                        <p class="text-sm md:text-2xl uppercase italic font-bold text text-blue-dark">
                             <?php echo $lang['slider-text-1']; ?>
                         </p>
                     </div>
-                    <div class="absolute" style="top:78%;left:70%;transform: translate(-50%, -50%);" data-aos="fade-right" data-aos-duration="3000">
-                        <p class="text-2xl uppercase italic font-semibold text text-blue-dark">
+                    <div class="absolute top-[80%] left-[55%] md:top-[78%] md:left-[70%]" style="transform: translate(-50%, -50%);" data-aos="fade-right" data-aos-duration="3000">
+                        <p class="text-sm md:text-2xl uppercase italic font-semibold text text-blue-dark">
                             <?php echo $lang['slider-text-2']; ?>
                         </p>
                     </div>
