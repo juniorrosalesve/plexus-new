@@ -1,5 +1,9 @@
 <?php
-    // Lenguaje en inglés
     $lang   =   [
-        'testimonial' => 'Our Clients'
+        'country' => 'Country:',
+        'region' => 'Region:',
+        'eco_activity' => 'Economic Activity:',
+        'projects' => 'Projects:',
+        'return' => 'Return:',
+        'to' => 'to'
     ];

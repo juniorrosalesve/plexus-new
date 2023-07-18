@@ -10,12 +10,12 @@
         <div class="ml-3 mr-3">|</div>
         <div>
             <img src="./res/flags/es.png" alt="flag-es" class="-mt-1 inline cursor-pointer">
-            <a href="./<?php echo $route;?>.php?lang=es">Español</a>
+            <a href="./<?php echo $route;?>.php?lang=es<?php if(isset($_GET['id'])) { echo '&id='.$_GET['id']; } ?>">Español</a>
         </div>
         <div class="ml-3 mr-3">|</div>
         <div class="mr-8">
             <img src="./res/flags/en.png" alt="flag-en" class="-mt-1 inline cursor-pointer">
-            <a href="./<?php echo $route;?>.php?lang=en">English</a>
+            <a href="./<?php echo $route;?>.php?lang=en<?php if(isset($_GET['id'])) { echo '&id='.$_GET['id']; } ?>">English</a>
         </div>
     </div>
 </div>

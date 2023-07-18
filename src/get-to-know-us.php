@@ -161,14 +161,6 @@
                         <h4 class="ml-3 font-semibold italic">Arturo Kimura</h4>
                     </div>
                     <div>
-                        <img src="./res/directive/director_atorres.jpg" alt="director_atorres" />
-                        <h4 class="ml-3 font-semibold italic">Alejandro Torres</h4>
-                    </div>
-                    <div class="mb-4">
-                        <img src="./res/directive/director_dbrito.jpg" alt="director_dbrito" />
-                        <h4 class="ml-3 font-semibold italic">Daniel Brito</h4>
-                    </div>
-                    <div>
                         <img src="./res/directive/director_cedri.jpg" alt="director_cedri" />
                         <h4 class="font-semibold italic">Christian S. Espinosa</h4>
                     </div>

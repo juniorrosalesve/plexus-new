@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="./res/css/styles__4.css">
-<link rel="stylesheet" href="./res/css/extra__6.css">
+<link rel="stylesheet" href="./res/css/styles__5.css">
+<link rel="stylesheet" href="./res/css/extra__7.css">
 <link rel="stylesheet" href="./res/css/swiper.min.css">
 <link rel="stylesheet" href="./res/css/aos.css">
 

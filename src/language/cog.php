@@ -21,6 +21,8 @@
     if($page == 'contact')
         include_once("./language/".$_SESSION['lang']."/contact.php");
     if($page == 'testimonials')
+        include_once("./language/".$_SESSION['lang']."/testimonials.php");
+    if($page == 'testimonial')
         include_once("./language/".$_SESSION['lang']."/testimonial.php");
 
     if($page == 'operational-exc')
