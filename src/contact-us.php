@@ -23,7 +23,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
                 <div>
                     <h1 class="text-lg mb-3"><?php echo $lang['florida']; ?></h1>
-                    <div class="bg-gray-200 h-52"></div>
+                    <div class="bg-gray-200 h-64 mb-3" style="box-shadow: 0 0 3px rgba(0,0,0,.3);" id="florida"></div>
                     <p><?php echo $lang['flor_info']; ?></p>
                     <p><?php echo $lang['flor_address']; ?></p>
                     <p><?php echo $lang['flor_phone']; ?></p>
@@ -31,7 +31,7 @@
                 </div>
                 <div>
                     <h1 class="text-lg mb-3"><?php echo $lang['mexico']; ?></h1>
-                    <div class="bg-gray-200 h-52"></div>
+                    <div class="bg-gray-200 h-64 mb-3" style="box-shadow: 0 0 3px rgba(0,0,0,.3);" id="mexico"></div>
                     <p><?php echo $lang['mex_info']; ?></p>
                     <p><?php echo $lang['mex_address']; ?></p>
                     <p><?php echo $lang['mex_phone']; ?></p>
@@ -40,7 +40,7 @@
 
                 <div>
                     <h1 class="text-lg mb-3"><?php echo $lang['peru']; ?></h1>
-                    <div class="bg-gray-200 h-52"></div>
+                    <div class="bg-gray-200 h-64 mb-3" id="peru" style="box-shadow: 0 0 3px rgba(0,0,0,.3);"></div>
                     <p><?php echo $lang['per_info']; ?></p>
                     <p><?php echo $lang['per_address']; ?></p>
                     <p><?php echo $lang['per_phone']; ?></p>
@@ -48,7 +48,7 @@
                 </div>
                 <div>
                     <h1 class="text-lg mb-3"><?php echo $lang['colombia']; ?></h1>
-                    <div class="bg-gray-200 h-52"></div>
+                    <div class="bg-gray-200 h-64 mb-3" id="bogota" style="box-shadow: 0 0 3px rgba(0,0,0,.3);"></div>
                     <p><?php echo $lang['col_info']; ?></p>
                     <p><?php echo $lang['col_address']; ?></p>
                     <p><?php echo $lang['col_phone']; ?></p>
@@ -57,14 +57,14 @@
 
                 <div>
                     <h1 class="text-lg mb-3"><?php echo $lang['chile']; ?></h1>
-                    <div class="bg-gray-200 h-52"></div>
+                    <div class="bg-gray-200 h-64 mb-3" id="chile" style="box-shadow: 0 0 3px rgba(0,0,0,.3);"></div>
                     <p><?php echo $lang['chi_info']; ?></p>
                     <p><?php echo $lang['chi_address']; ?></p>
                     <p><a href="mailto:plexuscol@plexuscon.com"><?php echo $lang['chi_mail']; ?></a></p>
                 </div>
                 <div>
                     <h1 class="text-lg mb-3"><?php echo $lang['panama']; ?></h1>
-                    <div class="bg-gray-200 h-52"></div>
+                    <div class="bg-gray-200 h-64 mb-3" id="panama" style="box-shadow: 0 0 3px rgba(0,0,0,.3);"></div>
                     <p><?php echo $lang['pan_info']; ?></p>
                     <p><?php echo $lang['pan_address']; ?></p>
                     <p><?php echo $lang['pan_phone']; ?></p>
@@ -133,6 +133,43 @@
                 </div>
             </div>
         </div>
+
+        <!-- prettier-ignore -->
+        <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+        ({key: "AIzaSyAiLdk6B0raB4Pu-SIZp_OpHJA_ZxFOUZY", v: "beta"});</script>
+
+        <script>
+            // Initialize and add the map
+            let map;
+
+            async function initMap(xlat, xlng, xid) {
+                const position = { lat: xlat, lng: xlng };
+
+                const { Map } = await google.maps.importLibrary("maps");
+                const { AdvancedMarkerView } = await google.maps.importLibrary("marker");
+
+                // The map, centered at Uluru
+                map = new Map(document.getElementById(xid), {
+                    zoom: 17,
+                    center: position,
+                    mapId: "DEMO_MAP_ID",
+                });
+
+                // The marker, positioned at Uluru
+                const marker = new AdvancedMarkerView({
+                    map: map,
+                    position: position,
+                    title: "",
+                });
+            }
+
+            initMap(26.1437127, -80.326932, 'florida');
+            initMap(19.44356, -99.1841715, 'mexico');
+            initMap(-12.092488, -77.0286015, 'peru');
+            initMap(4.6912725, -74.0360689, 'bogota');
+            initMap(-33.409204, -70.6036058, 'chile');
+            initMap(19.44356, -99.1841715, 'panama');
+        </script>
 
         <!-- FOOTER -->
         <?php include_once("./theme/footer.php"); ?>

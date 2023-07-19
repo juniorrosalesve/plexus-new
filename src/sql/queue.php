@@ -20,6 +20,16 @@
         $norteamerica    =   resultToArray($result);
         $result->free_result();
     }
+    $centroamerica  =   [];
+    if ($result = $conn->query("SELECT * FROM clientes WHERE tag = 'centroamerica'")) {
+        $centroamerica    =   resultToArray($result);
+        $result->free_result();
+    }
+    $sudamerica  =   [];
+    if ($result = $conn->query("SELECT * FROM clientes WHERE tag = 'sudamerica'")) {
+        $sudamerica    =   resultToArray($result);
+        $result->free_result();
+    }
     $conn->close();
 
     function resultToArray($result) {

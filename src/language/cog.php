@@ -34,6 +34,9 @@
     if($page == 'human-capital')
         include_once("./language/".$_SESSION['lang']."/human-capital.php");
 
+    if($page == 'search')
+        include_once("./language/".$_SESSION['lang']."/search.php");
+
     include_once("./language/".$_SESSION['lang']."/header.php");
 
     $cog['link_operational_excellence']     =   './operational-excellence.php';
