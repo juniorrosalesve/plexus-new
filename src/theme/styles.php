@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="./res/css/styles__6.css">
+<link rel="stylesheet" href="./res/css/styles__7.css">
 <link rel="stylesheet" href="./res/css/extra__8.css">
 <link rel="stylesheet" href="./res/css/swiper.min.css">
 <link rel="stylesheet" href="./res/css/aos.css">

@@ -5,7 +5,7 @@
 <div style="background-color: #d9d9d9;" class="h-6">
     <div class="flex float-right text-xs mt-[3px]">
         <div>
-            <a href="javascript:void(0);"><?php echo $lang["joinTeam"]; ?></a>
+            <a href="./career-plan.php"><?php echo $lang["joinTeam"]; ?></a>
         </div>
         <div class="ml-3 mr-3">|</div>
         <div>

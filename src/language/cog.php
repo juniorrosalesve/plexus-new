@@ -36,6 +36,8 @@
 
     if($page == 'search')
         include_once("./language/".$_SESSION['lang']."/search.php");
+    if($page == 'carrera')
+        include_once("./language/".$_SESSION['lang']."/career-plan.php");
 
     include_once("./language/".$_SESSION['lang']."/header.php");
 
