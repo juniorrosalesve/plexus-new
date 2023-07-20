@@ -1,5 +1,5 @@
 <?php
     $host   =   'localhost';
-    $user   =   'root';
-    $pass   =   '';
+    $user   =   'junior';
+    $pass   =   'entrar12';
     $database   =   'plexus';
