@@ -7,4 +7,5 @@ Antes de todo debes crear una base de datos que se encuentra en ***src/sql/plexu
 ## E-mail
 Sí deseas configurar la información del correo lo puedes hacer en ***src/PHPMailer/form.php***. Pero ya hay un correo gmail ahí configurado y funciona bien.
 
-Esta web es un clon de plexuscon.com dónde el código se migró de wordpress a uno nátivo.
+
+*Esta web es un clon de plexuscon.com dónde el código se migró de wordpress a uno nátivo.*
