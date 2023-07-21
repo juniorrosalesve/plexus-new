@@ -73,7 +73,7 @@
 
                 <div>
                     <h1 class="text-lg mb-3"><?php echo $lang['form']; ?></h1>
-                    <form action="" method="POST">
+                    <form action="./PHPMailer/form.php" method="POST">
                         <label for="name" class="block mb-1 text-sm font-medium text-gray-900">
                             <?php echo $lang['form_name']; ?>
                         </label>
@@ -92,7 +92,7 @@
                         <label for="message" class="block mt-2 mb-1 text-sm font-medium text-gray-900">
                             <?php echo $lang['form_message']; ?>
                         </label>
-                        <input type="email" name="message" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" />
+                        <input type="text" name="message" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" />
 
                         <button type="submit" class="mt-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">
                             <?php echo $lang['form_btn']; ?>
@@ -136,7 +136,7 @@
 
         <!-- prettier-ignore -->
         <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
-        ({key: "AIzaSyAiLdk6B0raB4Pu-SIZp_OpHJA_ZxFOUZY", v: "beta"});</script>
+        ({key: "AIzaSyDjhxwv9hR-J2jXykp8WzqG6cpvg7mumz0", v: "beta"});</script>
 
         <script>
             // Initialize and add the map

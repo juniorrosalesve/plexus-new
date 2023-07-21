@@ -99,7 +99,7 @@
                 </div>
             </div>
             <h1 class="text-2xl font-semibold text-blue-dark my-5"><?php echo $lang['title-form']; ?></h1>
-            <form action="" method="POST">
+            <form action="./PHPMailer/form.php" method="POST" enctype="multipart/form-data">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div>
                         <label for="name" class="block mb-1 text-sm font-medium text-gray-900">
@@ -115,7 +115,7 @@
                     </div>
                     <div>
                         <label for="country" class="block mb-2 text-sm font-medium text-gray-900"><?php echo $lang['form-country']; ?></label>
-                        <select id="country" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+                        <select id="country" name="country" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
                             <option selected>...</option>
                             <?php
                                 for($i = 0; $i < sizeof($lang['form-countrys']); $i++)
@@ -125,10 +125,10 @@
                     </div>
                     <div>
                         <label class="block mb-2 text-sm font-medium text-gray-900" for="file_input"><?php echo $lang['form-file']; ?></label>
-                        <input class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none" id="file_input" type="file">
+                        <input accept="application/msword, application/pdf" class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none" id="file_input" name="xfile" type="file">
                     </div>
                 </div>
-                <button type="button" class="mt-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">
+                <button type="submit" class="mt-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">
                     <?php echo $lang['form-btn']; ?>
                 </button>
             </form>
