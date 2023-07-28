@@ -32,11 +32,11 @@
             <div class="grid grid-cols-1 md:grid-cols-2">
                 <div class="ml-5 mb-5 md:mb-0">
                     <img style="box-shadow: 0 0 3px rgba(0,0,0,.3);width:100px;" src="./res/customers/<?php echo $empresa['tag']; ?>/<?php echo $empresa['logo']; ?>" alt="1" />
-                    <p class="mt-3"><span class="font-semibold"><?php echo $lang['country']; ?></span> <?php echo $empresa['pais-'.$_SESSION['lang']]; ?></p>
-                    <p class="mt-1"><span class="font-semibold"><?php echo $lang['region']; ?></span> <?php echo $empresa['region-'.$_SESSION['lang']]; ?></p>
+                    <p class="mt-3"><span class="font-semibold"><?php echo $lang['country']; ?></span> <?php echo utf8_encode($empresa['pais-'.$_SESSION['lang']]); ?></p>
+                    <p class="mt-1"><span class="font-semibold"><?php echo $lang['region']; ?></span> <?php echo utf8_encode($empresa['region-'.$_SESSION['lang']]); ?></p>
                     <?php 
                         if($empresa['actividad-es'] != null) { ?>
-                            <p class="mt-1"><span class="font-semibold"><?php echo $lang['eco_activity']; ?></span> <?php echo $empresa['actividad-'.$_SESSION['lang']]; ?></p>
+                            <p class="mt-1"><span class="font-semibold"><?php echo $lang['eco_activity']; ?></span> <?php echo utf8_encode($empresa['actividad-'.$_SESSION['lang']]); ?></p>
                     <?php } ?>
                     <?php 
                         if($empresa['proyecto-es'] != null) { ?>
@@ -45,7 +45,7 @@
                                 <?php
                                     $projects   =   explode("|", $empresa['proyecto-'.$_SESSION['lang']]);
                                     for($i = 0; $i < sizeof($projects); $i++)
-                                        echo '<li>'.$projects[$i].'</li>';
+                                        echo '<li>'.utf8_encode($projects[$i]).'</li>';
                                 ?>
                             </ul>
                     <?php } ?>
@@ -56,7 +56,7 @@
                                 echo '<p class="my-2"><span class="font-semibold">'.$lang['return'].'</span> '.$retorno[0].' '.$lang['to'].' 1</p>';
                                 $projects   =   explode("|", $empresa['proyecto2-'.$_SESSION['lang']]);
                                 for($i = 0; $i < sizeof($projects); $i++)
-                                    echo '<li>'.$projects[$i].'</li>';
+                                    echo '<li>'.utf8_encode($projects[$i]).'</li>';
                                 echo '<p class="my-2"><span class="font-semibold">'.$lang['return'].'</span> '.$retorno[1].' '.$lang['to'].' 1</p>';
                             }
                             else 

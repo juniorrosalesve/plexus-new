@@ -15,7 +15,7 @@
         <!-- BODY -->
         <div>
             <?php if($_SESSION['lang'] == 'es') { ?>
-                <img src="./res/contact/<?php echo $_SESSION['lang']; ?>/contacto.jpg" alt="contact" />
+                <img src="./res/contact/<?php echo $_SESSION['lang']; ?>/contacto.jpg" alt="contact" class="w-[400px] md:w-[800px] lg:w-[1160px]" />
             <?php } ?>
         </div>
         <div class="bg-white p-8 text-pl-gray">
